@@ -1,0 +1,7 @@
+ldap_servers: ldap://ldap.{{ hoster.stdout }}
+ldap_mech: PLAIN
+ldap_search_base: dc=account,dc=ldap
+ldap_filter: (&(mail=%u)(objectClass=person)(memberOf=cn=mail,dc=group,dc=ldap)(userClass=active))
+ldap_bind_dn: cn=sasl,dc=service,dc=ldap
+ldap_password: secret
+ldap_start_tls: yes

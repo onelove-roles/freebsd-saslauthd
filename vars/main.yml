@@ -1,0 +1,3 @@
+---
+saslauthd_packages:
+  - name: "cyrus-sasl-saslauthd"
